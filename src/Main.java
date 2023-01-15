@@ -8,5 +8,14 @@ public class Main {
             total = total + deposit;
             System.out.println("Месяц " + i + " сумма накоплений равна "+ total);
         }
+        int b = 0;
+        while ( b < 10 ) {
+            b=b+1;
+            System.out.print(b + " ");
+        }
+        System.out.println();
+        for ( int c = 10; c > 0 ; c = c - 1) {
+            System.out.print(c + " ");
+        }
     }
 }
