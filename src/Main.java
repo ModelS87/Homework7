@@ -10,12 +10,24 @@ public class Main {
         }
         int b = 0;
         while ( b < 10 ) {
-            b=b+1;
+            b= b + 1 ;
             System.out.print(b + " ");
         }
         System.out.println();
         for ( int c = 10; c > 0 ; c = c - 1) {
             System.out.print(c + " ");
         }
+        System.out.println();
+        int population = 12_000_000;
+        int year = 0;
+        int populationDead = 8;
+        int populationBorn = 17;
+        while (year < 10) {
+            year++;
+            population = population / 1000* (populationBorn-populationDead) + population;
+            System.out.println("Год " + year + ", численность населения составляет " + population);
+        }
+
+
     }
 }
