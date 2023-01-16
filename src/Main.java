@@ -40,28 +40,36 @@ public class Main {
         int deposit2 = 15_000;
         int month2 = 0;
         int result2 = 0;
-        for (; result2 < 12_000_000; month2 ++) {
+        for (; result2 < 12_000_000; month2++) {
             result2 = result2 + result2 * 7 / 100 + deposit2;
             if (month2 % 6 == 0) {
                 System.out.println("Месяц " + month2 + " - результат накоплений: " + result2);
             }
         }
-        System.out.println( result );
+        System.out.println(result);
 
-    int depositVasya = 15_000;
-    int monthDepVasya = 0;
-    int resultVasya = 0;
-    for (;monthDepVasya <= 108; monthDepVasya++ ) {
-        resultVasya = depositVasya + resultVasya*7/100 + resultVasya;
-        if (monthDepVasya % 6 == 0) {
-            System.out.println( "Месяц " + monthDepVasya + " - результат накоплений: " + resultVasya);
+        int depositVasya = 15_000;
+        int monthDepVasya = 0;
+        int resultVasya = 0;
+        for (; monthDepVasya <= 108; monthDepVasya++) {
+            resultVasya = depositVasya + resultVasya * 7 / 100 + resultVasya;
+            if (monthDepVasya % 6 == 0) {
+                System.out.println("Месяц " + monthDepVasya + " - результат накоплений: " + resultVasya);
+            }
         }
-    }
 
-    for (int friday = 3; friday <= 31; friday = friday + 7 ) {
-        System.out.println( "Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
-    }
+        for (int friday = 3; friday <= 31; friday = friday + 7) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+        }
+        System.out.println();
 
-
+        int yearNow = 2022;
+        int startYear = yearNow - 200;
+        int endYear = yearNow + 100;
+        for (int yearCometa = 0; yearCometa < endYear; yearCometa = yearCometa + 79) {
+            if (yearCometa > startYear) {
+                System.out.println(yearCometa);
+            }
+        }
     }
 }
