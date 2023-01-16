@@ -47,5 +47,15 @@ public class Main {
             }
         }
         System.out.println( result );
+
+    int depositVasya = 15_000;
+    int monthDepVasya = 0;
+    int resultVasya = 0;
+    for (;monthDepVasya <= 108; monthDepVasya++ ) {
+        resultVasya = depositVasya + resultVasya*7/100 + resultVasya;
+        if (monthDepVasya % 6 == 0) {
+            System.out.println( "Месяц " + monthDepVasya + " - результат накоплений: " + resultVasya);
+        }
+    }
     }
 }
