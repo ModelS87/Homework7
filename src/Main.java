@@ -57,5 +57,11 @@ public class Main {
             System.out.println( "Месяц " + monthDepVasya + " - результат накоплений: " + resultVasya);
         }
     }
+
+    for (int friday = 3; friday <= 31; friday = friday + 7 ) {
+        System.out.println( "Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+    }
+
+
     }
 }
